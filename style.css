@@ -1,3 +1,5 @@
+/* Global property */
+
 * {
     font-family: Helvetica, "Arial Nova", sans-serif;
 }
@@ -9,35 +11,89 @@ body {
 }
 
 p {
-    font-family: Calibri, Helvetica, Georgia;
-    font-size: 16px;
+    font-family: "Calibri", Helvetica, Georgia;
+    font-style: normal;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+strong, h1 {
+    font-weight: normal;
 }
 
 /*  Header  */
 
 header {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(239, 239, 239);
+    justify-content: space-around;
+    align-items: center;
 }
 
-#about {
-    display: flex;
-    flex-wrap: wrap;
+h1 {
+    border-top: 2px solid rgb(0, 165, 173);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
 }
+
+h2, #details {
+    border-bottom: 2px solid rgb(0, 165, 173);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header img {
+    height: 6em;
+    width: 6em;
+}
+
+/* Details */
 
 #details {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 5rem;
+    margin-left: 5%;
+    border-top: 2px solid rgb(0, 165, 173);
+    padding-left: 5%;
 }
 
-#presentation {
-    width: 60%;
+#details * {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-#project {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
+#details a:first-child::before {
+    content: '✉ ';
+}
+
+#details a:nth-child(3)::before {
+    content: '📞 ';
+}
+
+/* Main */
+
+h3 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 0.95rem;
+}
+
+h4 {
+    font-size: 0.85rem;
+    margin: 0px;
+}
+
+h4 + p {
+    margin-top: 0px;
 }
