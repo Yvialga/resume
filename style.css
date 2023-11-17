@@ -1,7 +1,7 @@
 /* Global property */
 
 * {
-    font-family: Helvetica, "Arial Nova", sans-serif;
+    font-family: "Calibri", Helvetica, "Arial Nova", Georgia;
 }
 
 body {
@@ -10,8 +10,11 @@ body {
     max-width: 21cm;
 }
 
+h1, h2, h3, h4 {
+    font-family: Helvetica, "Arial Nova", Georgia;
+}
+
 p {
-    font-family: "Calibri", Helvetica, Georgia;
     font-style: normal;
 }
 
@@ -20,6 +23,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
+a:hover {
+    color: goldenrod;
+    font-weight: bold;
+}   
 
 strong, h1 {
     font-weight: normal;
@@ -40,10 +48,6 @@ h1 {
     padding-top: 5px;
 }
 
-h2, #details {
-    border-bottom: 2px solid rgb(0, 165, 173);
-}
-
 h1, h2 {
     text-align: center;
 }
@@ -52,6 +56,11 @@ header img {
     height: 6em;
     width: 6em;
 }
+
+h2, #details {
+    border-bottom: 2px solid rgb(0, 165, 173);
+}
+
 
 /* Details */
 
@@ -78,7 +87,33 @@ header img {
     content: '📞 ';
 }
 
+#details p:nth-child(2)::before {
+    content: '📋 ';
+}
+
+#details p:nth-child(4)::before {
+    content: '📍 ';
+}
+
+span a {
+    margin-left: 0.5rem;
+}
+
+#details span {
+    display: flex;
+}
+
+#details span img {
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+}
+
 /* Main */
+
+.circle-bullet {
+    list-style: url("./images/puce-cercle.png");
+}
 
 h3 {
     font-size: 0.95rem;
