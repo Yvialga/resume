@@ -14,10 +14,6 @@ h1, h2, h3, h4 {
     font-family: Helvetica, "Arial Nova", Georgia;
 }
 
-p {
-    font-style: normal;
-}
-
 a {
     font-style: normal;
     text-decoration: none;
@@ -27,7 +23,11 @@ a {
 a:hover {
     color: goldenrod;
     font-weight: bold;
-}   
+}
+
+p {
+    font-style: normal;
+}
 
 strong, h1 {
     font-weight: normal;
@@ -79,11 +79,11 @@ h2, #details {
     margin-bottom: 1%;
 }
 
-#details a:first-child::before {
+#details span:nth-child(1)::before {
     content: '✉ ';
 }
 
-#details a:nth-child(3)::before {
+#details span:nth-child(3)::before {
     content: '📞 ';
 }
 
@@ -93,6 +93,11 @@ h2, #details {
 
 #details p:nth-child(4)::before {
     content: '📍 ';
+}
+
+#details span:nth-child(1),
+#details span:nth-child(2) {
+    font-synthesis: none;
 }
 
 span a {
