@@ -33,6 +33,10 @@ strong, h1 {
     font-weight: normal;
 }
 
+li {
+    font-size: 0.95rem;
+}
+
 /*  Header  */
 
 header {
@@ -114,17 +118,43 @@ span a {
     text-align: center;
 }
 
+/* Ensemble main + aside */
+
+.main-content {
+    display: flex;
+}
+
 /* Main */
 
-.circle-bullet {
-    list-style: url("./images/puce-cercle.png");
+main {
+    width: 75%;
+}
+
+section {
+    margin-left: 5%;
+}
+
+.decoration-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .decoration-bar {
+    align-self: center;
     display: inline-block;
     height: 2px;
     background-color: rgb(0, 165, 173);
     width: 10%;
+}
+
+.section-title {
+    display: flex;
+}
+
+.section-title img {
+    align-self: center;
+    margin-right: 10%;
 }
 
 h3 {
@@ -132,8 +162,15 @@ h3 {
     text-transform: uppercase;
 }
 
-li {
-    font-size: 0.95rem;
+
+/*h3::before {
+    content: url("./images/puce-cercle.png");
+    margin-right: 1%;
+    vertical-align: baseline;
+}*/
+
+main li {
+    list-style: url("./images/puce-cercle.png");
 }
 
 h4 {
@@ -143,4 +180,24 @@ h4 {
 
 h4 + p {
     margin-top: 0px;
+}
+
+/* ******************* Aside ******************** */
+
+aside {
+    position: relative;
+    width: 25%;
+    margin-left: 1rem;
+    padding-left: 1%;
+    box-shadow: 1px 1px 4px 0px #00000038;
+    height: min-content;
+    
+}
+
+#quality li {
+    list-style: url("./images/arrow.png");
+}
+
+#software img {
+    width: 28px;
 }
