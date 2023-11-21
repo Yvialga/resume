@@ -120,6 +120,13 @@ span a {
     list-style: url("./images/puce-cercle.png");
 }
 
+.decoration-bar {
+    display: inline-block;
+    height: 2px;
+    background-color: rgb(0, 165, 173);
+    width: 10%;
+}
+
 h3 {
     font-size: 0.95rem;
     text-transform: uppercase;
