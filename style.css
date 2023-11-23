@@ -1,4 +1,4 @@
-/* Global property */
+/* ******************* Global property ******************** */
 
 * {
     font-family: "Calibri", Helvetica, "Arial Nova", Georgia;
@@ -18,10 +18,12 @@ a {
     font-style: normal;
     text-decoration: none;
     color: black;
+    opacity: 0.8;
 }
 
-a:hover {
-    color: goldenrod;
+a:hover, a:active, a:focus {
+    color: rgb(0, 165, 173);
+    opacity: 1;
     font-weight: bold;
 }
 
@@ -37,7 +39,7 @@ li {
     font-size: 0.95rem;
 }
 
-/*  Header  */
+/* ******************* Header ******************** */
 
 header {
     display: flex;
@@ -66,7 +68,7 @@ h2, #details {
 }
 
 
-/* Details */
+/* ******************* #Details ******************** */
 
 #details {
     display: flex;
@@ -118,20 +120,20 @@ span a {
     text-align: center;
 }
 
-/* Ensemble main + aside */
+/* ******************* Ensemble main + aside ******************** */
 
 .main-content {
     display: flex;
 }
 
-/* Main */
+/* ******************* Main ******************** */
 
 main {
     width: 75%;
 }
 
 section {
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 .decoration-title {
@@ -182,16 +184,26 @@ h4 + p {
     margin-top: 0px;
 }
 
+#training {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#training p {
+    font-size: 0.95rem;
+}
+
 /* ******************* Aside ******************** */
 
 aside {
-    position: relative;
     width: 25%;
+    height: min-content;
+    margin-top: 1rem;
     margin-left: 1rem;
     padding-left: 1%;
-    box-shadow: 1px 1px 4px 0px #00000038;
-    height: min-content;
-    
+    box-shadow: 1px 1px 4px 1px #00000038;
+    border-radius: 15px;
 }
 
 #quality li {
